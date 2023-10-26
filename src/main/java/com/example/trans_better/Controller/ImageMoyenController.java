@@ -12,6 +12,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/imageMoyen")
+@CrossOrigin(origins = "http://localhost:4200")
+
 public class ImageMoyenController {
 
     @Autowired
@@ -37,8 +39,8 @@ public class ImageMoyenController {
         return this.iImageMoyenService.getImageMoyenById(idE);
     }
 
-    @DeleteMapping("/deleteMoyenTransport/{id}")
-    public void  deleteMoyenTransport (@PathVariable("id") int id){
+    @DeleteMapping("/deleteImageMoyen/{id}")
+    public void  deleteImageMoyen (@PathVariable("id") int id){
         this.iImageMoyenService.deleteById(id);
     }
 }

@@ -35,8 +35,8 @@ public class ImageMoyenController {
     }
 
     @GetMapping("/getByIdImageMoyen/{id}")
-    public Image_moyen getByIdImageMoyen (@PathVariable("id") Integer idE){
-        return this.iImageMoyenService.getImageMoyenById(idE);
+    public Image_moyen getByIdImageMoyen (@PathVariable("id") int id){
+        return this.iImageMoyenService.getImageMoyenById(id);
     }
 
     @DeleteMapping("/deleteImageMoyen/{id}")

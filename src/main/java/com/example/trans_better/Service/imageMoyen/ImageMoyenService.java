@@ -48,8 +48,8 @@ public class ImageMoyenService implements  IImageMoyenService{
             return null;
     }
     @Override
-    public Image_moyen getImageMoyenById (Integer idE) {
-        return this.imageMoyenRepository.findById(idE).get();
+    public Image_moyen getImageMoyenById (int id) {
+        return this.imageMoyenRepository.findById(id).get();
     }
 
     @Override

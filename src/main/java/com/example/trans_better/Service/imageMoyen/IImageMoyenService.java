@@ -11,7 +11,7 @@ public interface IImageMoyenService {
 
     Image_moyen updateImageMoyen(int id, Image_moyen imageMoyen);
 
-    Image_moyen getImageMoyenById(Integer idE);
+    Image_moyen getImageMoyenById(int id);
 
     void deleteById(int id);
 

@@ -14,7 +14,7 @@ public class Image_moyen {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Id")
-    private  Integer idImageMoyen   ;
+    private  int idImageMoyen   ;
     private  String path ;
 
     @ManyToOne
